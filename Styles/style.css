@@ -77,7 +77,8 @@ ul li:hover{
 .main-content {
   display: flex;
   flex-direction: column;
-  width: 1500px;
+  max-width: 1500px;
+  width: 100%;
   margin-left: 5px;
 }
 h3 {
@@ -233,7 +234,8 @@ button:focus{
 }
 
 .gallery-header {
-  width: 1230px;
+  max-width: 1230px;
+  width: 100%;
   height: 56px;
   margin: 40px auto;
   display: flex;
@@ -296,7 +298,8 @@ button:focus{
 /*here starts gallery content*/
 .gallery-content {
   margin: 0 auto;
-  width: 1230px;
+ max-width:  1230px;
+ width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -308,13 +311,14 @@ button:focus{
 }
 
 .bottom {
-  width: 1230px;
+  max-width:  1230px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .top {
-  width: 1230px;
+  max-width:  1230px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -402,6 +406,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 .load-more p {
   size: 16px;
@@ -418,6 +423,7 @@ h4 {
 }
 .designers-wrapper {
   max-width: 1230px;
+  width: 100%;
   margin: auto;
   padding-top: 70px;
 }
@@ -610,7 +616,8 @@ h4 {
   border-top: 1px solid rgba(226, 226, 226, 0.353);
 }
 .table-content:hover{
-    width: 1230px ;
+    max-width: 1230px ;
+    width: 100%;
     height: 72px;
     background-color: #F2F2F2;
     border-radius: 12px;
