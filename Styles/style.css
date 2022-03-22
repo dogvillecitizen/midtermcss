@@ -13,6 +13,8 @@
 .sidebar {
   width: 340px;
   background-color: #222222;
+  display: flex;
+  justify-content: center;
 }
 
 .center-container {
@@ -117,6 +119,9 @@ span {
 
 h4 {
   font-family: 'Avenir LT Std';
+}
+h4:hover{
+  font-weight: bolder;
 }
 h3 {
     font-family: 'Avenir LT Std';
@@ -301,6 +306,7 @@ button:focus{
   height: 278px;
   margin-bottom: 40px;
 }
+
 .bottom {
   width: 1230px;
   display: flex;
@@ -330,7 +336,21 @@ h4 {
   margin-bottom: 16px;
   border-radius: 12px;
   box-shadow: 4px 3px 4px 3px #ececec;
+
 }
+
+.image-wrapper:hover {
+  width: 289px;
+  height: 210px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px #cccccc;
+  opacity: 0.9;
+}
+
 .image-wrapper img {
   width: 289px;
   height: 210px;
@@ -352,7 +372,7 @@ h4 {
   border-radius: 12px;
   padding: 5px;
   margin-bottom: 15px;
-}
+  }
 .reacts {
     position: absolute;
     top: 20px;
@@ -362,14 +382,7 @@ h4 {
     flex-wrap: wrap;
 
 }
-/* .reacts:hover {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 34px;
-    display: flex;
-    flex-wrap: wrap;
-} */
+
 .bottom-links li:hover{
     font-weight: bold;
     background-color: white;
@@ -659,4 +672,130 @@ h4 {
 .myproficon img {
   width: 24px;
   height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+
+  }
+  .main-content {
+    width: 80%;
+     flex-direction: column;
+  }
+  .right-content {
+    width: 80%;
+    flex-direction: column;
+  }
+  
+  .nav {
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+
+  }
+
+  .gallery-content{
+    max-width:1230px ;
+    width: 100%;
+    margin-top: 150px;
+    justify-content: center;
+  }
+  .gallery {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gallery-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery-header ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+
+  }
+
+  .top {
+    width: 100%;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bottom {
+    width: 100%;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+
+.load-more{
+  width: 100%;
+  max-width: 289px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.designers-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+.search{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.top-designers{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  max-width: 1230px;
+
+}
+.section-title{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1230px;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.footer-wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1230px;
+  justify-content: center;
+}
+header{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+.upload{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
 }
